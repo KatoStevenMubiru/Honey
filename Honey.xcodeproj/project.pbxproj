@@ -11,6 +11,15 @@
 		943229C829861DE100320902 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943229C729861DE100320902 /* ContentView.swift */; };
 		943229CA29861DE400320902 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 943229C929861DE400320902 /* Assets.xcassets */; };
 		943229CD29861DE400320902 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 943229CC29861DE400320902 /* Preview Assets.xcassets */; };
+		943229D42986213900320902 /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 943229D32986213900320902 /* Sounds */; };
+		943229D9298622FD00320902 /* HoneymoonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943229D8298622FD00320902 /* HoneymoonModel.swift */; };
+		943229DC298623C400320902 /* HoneymoonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943229DB298623C400320902 /* HoneymoonData.swift */; };
+		943229DF298624EE00320902 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943229DE298624EE00320902 /* CardView.swift */; };
+		94F4DB642986B4CA00B1271F /* HoneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F4DB632986B4CA00B1271F /* HoneyView.swift */; };
+		94F4DB662986B7CA00B1271F /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F4DB652986B7CA00B1271F /* FooterView.swift */; };
+		94F4DB692986BB6500B1271F /* HeaderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F4DB682986BB6500B1271F /* HeaderComponent.swift */; };
+		94F4DB6B2986BCC000B1271F /* GuideComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F4DB6A2986BCC000B1271F /* GuideComponent.swift */; };
+		94F4DB6D2986BF1500B1271F /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F4DB6C2986BF1500B1271F /* GuideView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,15 @@
 		943229C729861DE100320902 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		943229C929861DE400320902 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		943229CC29861DE400320902 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		943229D32986213900320902 /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
+		943229D8298622FD00320902 /* HoneymoonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneymoonModel.swift; sourceTree = "<group>"; };
+		943229DB298623C400320902 /* HoneymoonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneymoonData.swift; sourceTree = "<group>"; };
+		943229DE298624EE00320902 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		94F4DB632986B4CA00B1271F /* HoneyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneyView.swift; sourceTree = "<group>"; };
+		94F4DB652986B7CA00B1271F /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
+		94F4DB682986BB6500B1271F /* HeaderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderComponent.swift; sourceTree = "<group>"; };
+		94F4DB6A2986BCC000B1271F /* GuideComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideComponent.swift; sourceTree = "<group>"; };
+		94F4DB6C2986BF1500B1271F /* GuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +69,13 @@
 		943229C429861DE100320902 /* Honey */ = {
 			isa = PBXGroup;
 			children = (
+				94F4DB672986BB3C00B1271F /* Component */,
+				943229DA298623AE00320902 /* Data */,
+				943229D7298622C300320902 /* Models */,
 				943229C529861DE100320902 /* HoneyApp.swift */,
-				943229C729861DE100320902 /* ContentView.swift */,
+				943229DD298624BB00320902 /* View */,
 				943229C929861DE400320902 /* Assets.xcassets */,
+				943229D32986213900320902 /* Sounds */,
 				943229CB29861DE400320902 /* Preview Content */,
 			);
 			path = Honey;
@@ -65,6 +87,43 @@
 				943229CC29861DE400320902 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		943229D7298622C300320902 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				943229D8298622FD00320902 /* HoneymoonModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		943229DA298623AE00320902 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				943229DB298623C400320902 /* HoneymoonData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		943229DD298624BB00320902 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				943229C729861DE100320902 /* ContentView.swift */,
+				943229DE298624EE00320902 /* CardView.swift */,
+				94F4DB632986B4CA00B1271F /* HoneyView.swift */,
+				94F4DB652986B7CA00B1271F /* FooterView.swift */,
+				94F4DB6C2986BF1500B1271F /* GuideView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		94F4DB672986BB3C00B1271F /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				94F4DB682986BB6500B1271F /* HeaderComponent.swift */,
+				94F4DB6A2986BCC000B1271F /* GuideComponent.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +184,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				943229D42986213900320902 /* Sounds in Resources */,
 				943229CD29861DE400320902 /* Preview Assets.xcassets in Resources */,
 				943229CA29861DE400320902 /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +197,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94F4DB642986B4CA00B1271F /* HoneyView.swift in Sources */,
+				94F4DB662986B7CA00B1271F /* FooterView.swift in Sources */,
+				943229DC298623C400320902 /* HoneymoonData.swift in Sources */,
+				943229D9298622FD00320902 /* HoneymoonModel.swift in Sources */,
+				94F4DB692986BB6500B1271F /* HeaderComponent.swift in Sources */,
 				943229C829861DE100320902 /* ContentView.swift in Sources */,
 				943229C629861DE100320902 /* HoneyApp.swift in Sources */,
+				943229DF298624EE00320902 /* CardView.swift in Sources */,
+				94F4DB6B2986BCC000B1271F /* GuideComponent.swift in Sources */,
+				94F4DB6D2986BF1500B1271F /* GuideView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,8 +341,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,8 +369,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
