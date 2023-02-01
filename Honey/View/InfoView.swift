@@ -11,12 +11,70 @@ struct InfoView: View {
     
     var body: some View {
         
-        ScrollView(showsIndicators: false) {
-            VStack {
+        ScrollView(.vertical,showsIndicators: false) {
+            VStack(alignment: .center, spacing: 20) {
                 
                 HeaderComponent()
                 
+                Spacer(minLength: 10)
+                
+                Text("App Info")
+                    .fontWeight(.black)
+                    .font(.largeTitle)
+                    .foregroundColor(.pink)
+                
+                HStack{
+                    Text("Application").foregroundColor(.gray)
+                    Spacer()
+                    Text("Honey")
+
+                }//hstack
+                HStack{
+                    Text("Compatibilty").foregroundColor(.gray)
+                    Spacer()
+                    Text("Iphone,Ipad")
+
+                }//hstack
+                HStack{
+                    Text("Developer").foregroundColor(.gray)
+                    Spacer()
+                    Text("K.S.M")
+
+                }//hstack
+                
+                Text("Credits")
+                    .fontWeight(.black)
+                    .font(.largeTitle)
+                    .foregroundColor(.pink)
+                
+                HStack{
+                    Text("Photos").foregroundColor(.gray)
+                    Spacer()
+                    Text("Unsplash")
+
+                }//hstack
+                
+                Spacer(minLength: 10)
+                Button {
+                   print("button tapped")
+                } label: {
+                    Text("CONTINUE")
+                        .font(.headline)
+                        .padding()
+                        .frame(minWidth: 0, maxWidth: .infinity)
+                        .foregroundColor(.white)
+                        .background {
+                            Capsule().fill(Color.pink)
+                                
+                        }
+                    
+                }
+
             }// Vstack
+            .frame(minWidth: 0, maxWidth: .infinity)
+            .padding(.top, 15)
+            .padding(.bottom, 25)
+            .padding(.horizontal,25)
         }// scroll view
     }
 }

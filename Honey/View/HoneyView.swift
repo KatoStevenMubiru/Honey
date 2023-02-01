@@ -10,6 +10,7 @@ import SwiftUI
 struct HoneyView: View {
     @Binding var showGuideView : Bool
     
+    
     var body: some View {
         
         HStack {
