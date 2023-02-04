@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HoneyView: View {
     @Binding var showGuideView : Bool
-    
+    @Binding var showInfoView : Bool
     
     var body: some View {
         
@@ -51,7 +51,8 @@ struct HoneyView: View {
 
 struct HoneyView_Previews: PreviewProvider {
     @State static var showGuide : Bool = false
+    @State static var showInfo : Bool = false
     static var previews: some View {
-        HoneyView(showGuideView: $showGuide)
+        HoneyView(showGuideView: $showGuide, showInfoView: $showInfo)
     }
 }
