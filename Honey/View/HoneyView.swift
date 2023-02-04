@@ -15,13 +15,16 @@ struct HoneyView: View {
         
         HStack {
             Button {
-                print("Information")
+                self.showInfoView.toggle()
             } label: {
                 Image(systemName: "info.circle")
                     .font(.system(size: 24, weight: .regular))
                     
             }//button: label
             .accentColor(.primary)
+            .sheet(isPresented: $showInfoView) {
+                InfoView()
+            }
             
             Spacer()
             
