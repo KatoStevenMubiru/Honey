@@ -17,6 +17,10 @@ struct ContentView: View {
         
         VStack {
             
+            
+            
+            
+            
             HoneyView(showGuideView: $showGuide, showInfoView: $showInfo)
             
             Spacer()
