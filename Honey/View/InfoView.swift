@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct InfoView: View {
+    @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
         
@@ -56,7 +57,7 @@ struct InfoView: View {
                 
                 Spacer(minLength: 10)
                 Button {
-                   print("button tapped")
+                    self.presentationMode.wrappedValue.dismiss()
                 } label: {
                     Text("CONTINUE")
                         .font(.headline)
