@@ -13,6 +13,15 @@ struct ContentView: View {
     @State var showGuide : Bool = false
     @State var showInfo : Bool = false
     
+    var cardViews : [CardView] = {
+        var views = [CardView]()
+        
+        for honeymoon in honeymoonData{
+            views.append(CardView(honeymoon: honeymoon))
+        }
+        return views
+    }()
+    
     var body: some View {
         
         VStack {
@@ -25,8 +34,7 @@ struct ContentView: View {
             
             Spacer()
             
-            CardView(honeymoon: honeymoonData[1])
-                .padding()
+            // cards
             
             Spacer()
             
