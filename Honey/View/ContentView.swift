@@ -35,6 +35,14 @@ struct ContentView: View {
             Spacer()
             
             // cards
+            ZStack{
+                ForEach(cardViews) {
+                    
+                    cardView in cardView
+                }
+                .padding(.horizontal)
+                
+            }// zstack
             
             Spacer()
             
