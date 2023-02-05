@@ -22,6 +22,12 @@ struct ContentView: View {
         return views
     }()
     
+    private func isTopCard(cardView: CardView)-> Bool{
+        guard cardViews.firstIndex(where: {$0.id == cardView.id}) else {
+            return false
+        }
+    }
+    
     var body: some View {
         
         VStack {
