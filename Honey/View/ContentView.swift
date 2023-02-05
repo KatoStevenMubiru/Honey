@@ -23,9 +23,10 @@ struct ContentView: View {
     }()
     
     private func isTopCard(cardView: CardView)-> Bool{
-        guard cardViews.firstIndex(where: {$0.id == cardView.id}) else {
+        guard let index = cardViews.firstIndex(where: {$0.id == cardView.id}) else {
             return false
         }
+        return index == 0
     }
     
     var body: some View {
