@@ -16,8 +16,8 @@ struct ContentView: View {
     var cardViews : [CardView] = {
         var views = [CardView]()
         
-        for honeymoon in honeymoonData{
-            views.append(CardView(honeymoon: honeymoon))
+        for index in 0..<2{
+            views.append(CardView(honeymoon: honeymoonData[index]))
         }
         return views
     }()
