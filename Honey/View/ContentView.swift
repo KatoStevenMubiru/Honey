@@ -84,7 +84,8 @@ struct ContentView: View {
                     
                     cardView in cardView
                         .zIndex(self.isTopCard(cardView: cardView) ? 1 : 0)
-                        .gesture(LongPressGesture(minimumDuration: 0.01)).sequenced(before: DragGesture())
+                        .gesture(LongPressGesture(minimumDuration: 0.01))
+                        
                         
                 }
                 .padding(.horizontal)
