@@ -12,6 +12,7 @@ struct ContentView: View {
     @State var showAlert: Bool = false
     @State var showGuide : Bool = false
     @State var showInfo : Bool = false
+    @GestureState private var dragState = DragState.inactive
     
     var cardViews : [CardView] = {
         var views = [CardView]()
