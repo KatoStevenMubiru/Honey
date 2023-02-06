@@ -51,6 +51,16 @@ struct ContentView: View {
             }
         }// dragging
         
+        var isPressing: Bool{
+            switch self{
+            case .pressing, .dragging:
+                return true
+            case .inactive:
+                return false
+                
+            }
+        }// pressing
+        
     }//enum
     
     var body: some View {
