@@ -28,6 +28,21 @@ struct ContentView: View {
         }
         return index == 0
     }
+    enum DragState{
+        case inactive
+        case pressing
+        case dragging(translation :CGSize)
+        
+        var translation : CGSize{
+            switch self{
+            case .inactive, .pressing:
+                return .zero
+            case .dragging( let translation):
+                return translation
+            }
+        }//translation
+        
+    }//enum
     
     var body: some View {
         
