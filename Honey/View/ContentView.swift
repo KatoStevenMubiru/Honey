@@ -73,6 +73,8 @@ struct ContentView: View {
             
             
             HoneyView(showGuideView: $showGuide, showInfoView: $showInfo)
+                .opacity(dragState.isDragging ? 0.0 : 1.0)
+                .animation(.default)
             
             Spacer()
             
@@ -82,6 +84,7 @@ struct ContentView: View {
                     
                     cardView in cardView
                         .zIndex(self.isTopCard(cardView: cardView) ? 1 : 0)
+                        .gesture(LongPressGesture(minimumDuration: 0.01))
                 }
                 .padding(.horizontal)
                 
@@ -90,6 +93,9 @@ struct ContentView: View {
             Spacer()
             
             FooterView(showBooking: $showAlert)
+                .opacity(dragState.isDragging ? 0.0 : 1.0)
+                .animation(.default)
+            
         }// Vstack
         .alert(isPresented: $showAlert) {
             Alert(title: Text("SUCCESS"),message: Text("I want to wish you a very good honey moon. The best out here."), dismissButton: .default(Text("Weyagale mu Honey moon")))
