@@ -41,6 +41,15 @@ struct ContentView: View {
                 return translation
             }
         }//translation
+        var isDragging: Bool{
+            switch self{
+            case .dragging:
+                return true
+            case .pressing,.inactive:
+                return false
+                
+            }
+        }// dragging
         
     }//enum
     
