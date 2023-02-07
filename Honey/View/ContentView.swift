@@ -80,12 +80,12 @@ struct ContentView: View {
             
             // cards
             ZStack{
-                ForEach(cardViews) {
-                    
-                    cardView in cardView
+                ForEach(cardViews) {cardView in
+                    cardView
                         .zIndex(self.isTopCard(cardView: cardView) ? 1 : 0)
                         .gesture(LongPressGesture(minimumDuration: 0.01))
-                        
+                        .sequenced(before: DragGesture())
+                        .updating(<#T##SwiftUI.GestureState<State>#>, body: <#T##(Self.Value, State, SwiftUI.Transaction) -> Void#>)
                         
                 }
                 .padding(.horizontal)
