@@ -83,7 +83,7 @@ struct ContentView: View {
                 ForEach(cardViews) {cardView in
                     cardView
                         .zIndex(self.isTopCard(cardView: cardView) ? 1 : 0)
-                        .offset(x: self.dragState.translation)
+                        .offset(x: self.dragState.translation.width, y: self.dragState.translation.height)
                         .gesture(LongPressGesture(minimumDuration: 0.01) .sequenced(before: DragGesture())
                             .updating(self.$dragState, body: { (value, state , transaction ) in
                                 switch value{
