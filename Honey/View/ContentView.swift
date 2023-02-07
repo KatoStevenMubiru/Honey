@@ -85,9 +85,7 @@ struct ContentView: View {
                         .zIndex(self.isTopCard(cardView: cardView) ? 1 : 0)
                         .gesture(LongPressGesture(minimumDuration: 0.01))
                         .sequenced(before: DragGesture())
-                        .updating(self.$dragState) { (value, state , transaction )}) in
-                            <#code#>
-                        }
+                        .updating(self.$dragState, body: { (value, state , transaction )}) 
                         
                 }
                 .padding(.horizontal)
